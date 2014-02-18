@@ -1,0 +1,38 @@
+#!/bin/bash
+#
+# MegaCLI emulator
+# Emulatates output to test logic on my own LSI health check scripts
+#
+# Ray 02/17/2014
+#
+
+# Get Logical Disk info (/opt/MegaRAID/MegaCli/MegaCli64 -LDInfo -lALL -aALL -nolog)
+# Get Physical Disk info (/opt/MegaRAID/MegaCli/MegaCli64 -PdList -aALL -nolog)
+# Get BBU info (/opt/MegaRAID/MegaCli/MegaCli64 -AdpBbuCmd -GetBbuStatus -a0)
+
+
+#for now (un)comment the output desired
+ld=samples/ld_not_optimal
+#ld=samples/ld_optimal
+pd=samples/pd_all_online
+#pd=samples/pd_one_bad
+
+
+
+#loosely match what's given at the commandline
+case "$*" in
+	*[Ll][Dd][Ii][Nn]*)		# LDInfo
+	echo LdInfo
+	;;
+	*[Pp][Dd][Ll][Ii]*)		# PDList
+	echo PdInfo
+	;;
+	*[Bb][Bb][Uu][Ss]*)		# BBUStatus
+	echo BbuStatus
+	;;
+	*)				# else
+	echo no match known to this emulator
+	;;
+esac
+
+

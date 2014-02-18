@@ -1,0 +1,41 @@
+Adapter 0 -- Virtual Drive Information:
+Virtual Drive: 0 (Target Id: 0)
+Name                :
+RAID Level          : Primary-6, Secondary-0, RAID Level Qualifier-3
+Size                : 50.0 GB
+Is VD emulated      : No
+Parity Size         : 10.0 GB
+State               : Optimal
+Strip Size          : 64 KB
+Number Of Drives    : 12
+Span Depth          : 1
+Default Cache Policy: WriteBack, ReadAhead, Cached, Write Cache OK if Bad BBU
+Current Cache Policy: WriteBack, ReadAhead, Cached, Write Cache OK if Bad BBU
+Default Access Policy: Read/Write
+Current Access Policy: Read/Write
+Disk Cache Policy   : Disabled
+Encryption Type     : None
+Is VD Cached: No
+
+
+Virtual Drive: 1 (Target Id: 1)
+Name                :
+RAID Level          : Primary-6, Secondary-0, RAID Level Qualifier-3
+Size                : 18.139 TB
+Is VD emulated      : No
+Parity Size         : 3.627 TB
+State               : Optimal
+Strip Size          : 64 KB
+Number Of Drives    : 12
+Span Depth          : 1
+Default Cache Policy: WriteBack, ReadAhead, Cached, Write Cache OK if Bad BBU
+Current Cache Policy: WriteBack, ReadAhead, Cached, Write Cache OK if Bad BBU
+Default Access Policy: Read/Write
+Current Access Policy: Read/Write
+Disk Cache Policy   : Disabled
+Encryption Type     : None
+Is VD Cached: No
+
+
+
+Exit Code: 0x00
